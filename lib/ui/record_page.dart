@@ -55,6 +55,7 @@ class _RecordPageState extends State<RecordPage> {
 
   @override
   void dispose() {
+    _audioPlayer.dispose();
     _timer.cancel();
     _record.dispose();
     super.dispose();
